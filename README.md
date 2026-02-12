@@ -4,6 +4,7 @@
 ## Project Summary
 This project predicts whether a patient will miss a scheduled medical appointment (“No-show”).  
 It demonstrates an end-to-end machine learning workflow: preprocessing, feature engineering, feature selection, model training, and model evaluation on an imbalanced dataset.
+Main notebook: `medical_apointment_no_show_predict.ipynb`
 
 ## Dataset
 - Source: Kaggle — *Medical Appointment No Shows*
@@ -41,8 +42,10 @@ Given class imbalance, performance is interpreted with emphasis on the **No-show
 | Linear SVM | 0.798 | 0.000 | 0.000 | 0.000 |
 | Random Forest | 0.765 | 0.326 | 0.153 | 0.208 |
 
+**Key takeaway:** Random Forest achieved the best F1-score for the No-show class, but recall remains limited due to class imbalance.
+
 **Best model (by F1-score): Random Forest (F1 = 0.208)**  
-Saved model (optional): `models/Lara_Gatigbene_best_model.joblib`
+Saved model (optional): `models/Best_model.joblib`
 
 ## How to Run
 1. Clone the repository
@@ -65,4 +68,5 @@ Saved model (optional): `models/Lara_Gatigbene_best_model.joblib`
 
 ## Author
 Gatigbene Bomboma, Lara Abou-Arraj  
+LinkedIn: www.linkedin.com/in/gatigbene-bomboma-908940299
 
